@@ -97,10 +97,8 @@ export default {
       try {
         // Simulate processing
         await new Promise(resolve => setTimeout(resolve, 2000))
-        
-        const message = `Здравствуйте! Хочу записаться на курс "${this.course.title}" за ${this.course.price.toLocaleString()} ₽`
-        const encodedMessage = encodeURIComponent(message)
-        window.open(`https://t.me/taroandetc?text=${encodedMessage}`, '_blank')
+      
+        window.open(`https://t.me/taroandetc`, '_blank')
       } finally {
         this.isLoading = false
       }

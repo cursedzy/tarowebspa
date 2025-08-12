@@ -84,16 +84,13 @@ export default {
     goToCourse(id) {
       this.$router.push(`/courses/${id}`)
     },
-    async enrollCourse(course) {
+    async enrollCourse() {
       this.isLoading = true
       
       try {
         // Simulate processing
-        await new Promise(resolve => setTimeout(resolve, 1500))
-        
-        const message = `Здравствуйте! Хочу записаться на курс "${course.title}" за ${course.price.toLocaleString()} ₽`
-        const encodedMessage = encodeURIComponent(message)
-        window.open(`https://t.me/taroandetc?text=${encodedMessage}`, '_blank')
+        await new Promise(resolve => setTimeout(resolve, 1500)) 
+        window.open(`https://t.me/taroandetc`, '_blank')
       } finally {
         this.isLoading = false
       }
