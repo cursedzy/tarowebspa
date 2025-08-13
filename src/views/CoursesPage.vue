@@ -44,7 +44,7 @@
               </div>
               
               <div class="course-actions">
-                <a href="https://t.me/taroandetc" target="_blank" class="btn btn-primary btn-full">
+                <a href="https://t.me/taroandetc_chat" target="_blank" class="btn btn-primary btn-full">
                   Записаться на курс
                 </a>
                 <button class="btn btn-gold btn-full" @click.stop="goToCourse(course.id)">

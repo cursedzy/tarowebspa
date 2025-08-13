@@ -35,7 +35,7 @@
         </div>
         
         <div class="detail-footer">
-          <a href="https://t.me/taroandetc" target="_blank" class="btn btn-primary btn-large">
+          <a href="https://t.me/taroandetc_chat" target="_blank" class="btn btn-primary btn-large">
             {{ isLoading ? 'Обработка...' : `Записаться на курс за ${course.price.toLocaleString()} ₽` }}
           </a>
           <p v-if="course.note" class="course-note-detail">{{ course.note }}</p>

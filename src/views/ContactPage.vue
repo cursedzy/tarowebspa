@@ -69,7 +69,7 @@
         <div class="contact-cta">
           <h2>Готовы начать?</h2>
           <p>Свяжитесь со мной в Telegram для записи на консультацию</p>
-          <a href="https://t.me/taroandetc" target="_blank" class="btn btn-primary btn-large">
+          <a href="https://t.me/taroandetc_chat" target="_blank" class="btn btn-primary btn-large">
             Написать в Telegram
           </a>
         </div>
