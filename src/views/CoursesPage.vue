@@ -44,9 +44,9 @@
               </div>
               
               <div class="course-actions">
-                <button class="btn btn-primary btn-full" @click.stop="enrollCourse(course)">
+                <a href="https://t.me/taroandetc" target="_blank" class="btn btn-primary btn-full">
                   Записаться на курс
-                </button>
+                </a>
                 <button class="btn btn-gold btn-full" @click.stop="goToCourse(course.id)">
                   Подробнее
                 </button>
@@ -83,17 +83,6 @@ export default {
   methods: {
     goToCourse(id) {
       this.$router.push(`/courses/${id}`)
-    },
-    async enrollCourse() {
-      this.isLoading = true
-      
-      try {
-        // Simulate processing
-        await new Promise(resolve => setTimeout(resolve, 1500)) 
-        window.open(`https://t.me/taroandetc`, '_blank')
-      } finally {
-        this.isLoading = false
-      }
     }
   }
 }

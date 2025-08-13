@@ -35,13 +35,9 @@
         </div>
         
         <div class="detail-footer">
-          <button 
-            class="btn btn-primary btn-large" 
-            @click="enrollCourse"
-            :disabled="isLoading"
-          >
+          <a href="https://t.me/taroandetc" target="_blank" class="btn btn-primary btn-large">
             {{ isLoading ? 'Обработка...' : `Записаться на курс за ${course.price.toLocaleString()} ₽` }}
-          </button>
+          </a>
           <p v-if="course.note" class="course-note-detail">{{ course.note }}</p>
         </div>
       </div>
@@ -91,18 +87,6 @@ export default {
     }
   },
   methods: {
-    async enrollCourse() {
-      this.isLoading = true
-      
-      try {
-        // Simulate processing
-        await new Promise(resolve => setTimeout(resolve, 2000))
-      
-        window.open(`https://t.me/taroandetc`, '_blank')
-      } finally {
-        this.isLoading = false
-      }
-    }
   },
   watch: {
     course: {
