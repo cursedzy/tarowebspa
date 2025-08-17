@@ -177,7 +177,7 @@ export default {
 
 .text-card {
   background: linear-gradient(135deg, var(--white) 0%, var(--light-background) 100%);
-  padding: var(--space-3xl);
+  padding: var(--space-xl);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-xl);
   border: 2px solid transparent;
@@ -492,10 +492,6 @@ export default {
   .credentials {
     flex-direction: column;
     gap: var(--space-lg);
-  }
-
-  .text-card {
-    padding: var(--space-2xl);
   }
 
   .philosophy-content {

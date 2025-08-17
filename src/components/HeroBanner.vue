@@ -40,11 +40,10 @@
               <div class="card-front">
                 <div class="card-header">
                   <h3>{{ course.title }}</h3>
-                  <div class="price-tag">{{ course.price.toLocaleString() }} ₽</div>
                 </div>
                 
                 <div class="card-image">
-                  <img :src="course.imageAlt" :alt="course.title" />
+                  <img :src="course.image" :alt="course.title" />
                   <div class="card-overlay">
                   </div>
                 </div>
@@ -76,11 +75,10 @@
             <div class="tarot-card-mobile">
               <div class="card-header">
                 <h3>{{ course.title }}</h3>
-                <div class="price-tag">{{ course.price.toLocaleString() }} ₽</div>
               </div>
               
               <div class="card-image">
-                <img :src="course.imageAlt" :alt="course.title" />
+                <img :src="course.image" :alt="course.title" />
                 <div class="card-overlay">
                 </div>
               </div>

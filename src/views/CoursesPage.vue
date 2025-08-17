@@ -17,7 +17,7 @@
             @click="goToCourse(course.id)"
           >
             <div class="course-image">
-              <img :src="course.imageAlt" :alt="course.title" />
+              <img :src="course.image" :alt="course.title" />
               <div class="course-level">{{ course.level }}</div>
             </div>
             

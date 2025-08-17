@@ -47,10 +47,6 @@ export default {
 </script>
 
 <style scoped>
-.section {
-  padding: 80px 0;
-  background: #fff;
-}
 
 .container {
   max-width: 1200px;
@@ -82,7 +78,7 @@ export default {
 
 .about-text h2 {
   font-size: 36px;
-  color: #333;
+  color: var(--light-gold);
   margin-bottom: 30px;
   font-weight: bold;
 }
@@ -90,7 +86,7 @@ export default {
 .about-text p {
   font-size: 16px;
   line-height: 1.8;
-  color: #666;
+  color: var(--light-gold);
   margin-bottom: 20px;
 }
 
@@ -106,7 +102,7 @@ export default {
 
 .credential h4 {
   font-size: 14px;
-  color: #999;
+  color: var(--light-gold);
   margin-bottom: 5px;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -115,7 +111,7 @@ export default {
 .credential span {
   font-size: 24px;
   font-weight: bold;
-  color: rgb(31, 20, 22)
+  color: var(--light-gold);
 }
 
 @media (max-width: 768px) {
