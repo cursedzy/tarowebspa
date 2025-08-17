@@ -1,6 +1,6 @@
 /* Header Component */
 .header {
-  background: var(--white);
+  background: var(--black);
   box-shadow: var(--shadow-sm);
   position: fixed;
   top: 0;
